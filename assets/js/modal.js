@@ -8,7 +8,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeButton = modal.querySelector('.edd-cancel-modal-close');
     const confirmButton = document.getElementById('edd-cancel-modal-confirm');
     const cancelButton = document.getElementById('edd-cancel-modal-cancel');
+    const checkbox = document.getElementById('edd-cancel-confirm-checkbox');
     let originalLink = null;
+
+    // Handle checkbox state changes
+    checkbox.addEventListener('change', function () {
+        confirmButton.disabled = !this.checked;
+    });
 
     // Function to handle opening the modal
     function daanOpenModal(event) {
@@ -48,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Handle confirmation
     confirmButton.addEventListener('click', function () {
-        if (originalLink) {
+        if (originalLink && checkbox.checked) {
             window.location.href = originalLink.href;
         }
     });

@@ -77,19 +77,34 @@ class EDD_Cancel_Subscription_Modal {
         <div id="edd-cancel-modal" class="edd-cancel-modal">
             <div class="edd-cancel-modal-content">
                 <span class="edd-cancel-modal-close">&times;</span>
-                <h2><?php echo __( 'Don\'t want to be tied down?', 'edd-cancel-subscription-modal' ); ?></h2>
-                <p><?php echo __( 'I get it. Honestly. And I promise this won\'t be a 7 step process.', 'edd-cancel-subscription-modal' ); ?></p>
+                <h2><?php echo __( 'Don\'t wanna be tied down, huh?', 'edd-cancel-subscription-modal' ); ?></h2>
+                <p><?php echo __( 'I get it. Honestly.', 'edd-cancel-subscription-modal' ); ?></p>
+                <p><?php echo __( 'I promise <strong>this won\'t be a 7 step process</strong>, but I do want to make you aware of the following:', 'edd-cancel-subscription-modal' ); ?></p>
                 <p><?php echo __(
-						'An active subscription protects you from future price increases, so if you\'re planning to keep using the plugin, it\'s better to leave it active.',
+						'Recently, <strong>for the first time in 5 years</strong>, I had to <a href="https://daan.dev/blog/rants/daan-dev-2-0/" target="_blank">increase my prices</a>.',
 						'edd-cancel-subscription-modal'
 					); ?></p>
                 <p><?php echo __(
-						'Full disclosure: I\'ve only had to increase my prices once in the past 5 years and I have no plans to do it again, but, as I\'m sure you understand, these are uncertain times.',
+						'Full disclosure: <strong>I have no plans to do so again in the near future</strong>, but, as I\'m sure you understand, these are uncertain times.',
 						'edd-cancel-subscription-modal'
 					); ?></p>
+                <p><?php echo __(
+						'An active subscription <strong>protects you from future price increases</strong>, so if you\'re planning to keep using the plugin and renew your license, it\'s better to leave it active.',
+						'edd-cancel-subscription-modal'
+					); ?></p>
+                <p><?php echo __(
+						'That\'s it! I\'ve said what I wanted to say. Now it\'s up to you...',
+						'edd-cancel-subscription-modal'
+					); ?></p>
+                <div class="edd-cancel-confirmation">
+                    <label class="edd-cancel-checkbox-label">
+                        <input type="checkbox" id="edd-cancel-confirm-checkbox"/>
+                        <strong><?php echo __( 'I understand that my subscription can\'t be reactivated after I cancel it.', 'edd-cancel-subscription-modal' ); ?></strong>
+                    </label>
+                </div>
                 <div class="edd-cancel-modal-buttons">
-                    <button id="edd-cancel-modal-confirm" class="button"><?php echo __( 'Yes, Cancel', 'edd-cancel-subscription-modal' ); ?></button>
-                    <button id="edd-cancel-modal-cancel" class="button"><?php echo __( 'No, Keep Subscription', 'edd-cancel-subscription-modal' ); ?></button>
+                    <button id="edd-cancel-modal-confirm" disabled class="button"><?php echo __( 'Yes, please cancel', 'edd-cancel-subscription-modal' ); ?></button>
+                    <button id="edd-cancel-modal-cancel" class="button"><?php echo __( 'No, keep my subscription', 'edd-cancel-subscription-modal' ); ?></button>
                 </div>
             </div>
         </div>
