@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function daanOpenModal(event) {
         event.preventDefault();
         originalLink = event.currentTarget;
-        modal.style.display = 'block';
+        modal.style.display = 'flex';
         // Optional: Add fade-in animation
         modal.style.opacity = '0';
         setTimeout(() => {
