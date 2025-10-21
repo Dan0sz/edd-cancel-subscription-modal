@@ -3,7 +3,7 @@
  * Plugin Name: Easy Digital Downloads - Cancel Subscription Modal
  * Plugin URI: https://github.com/Dan0sz/edd-cancel-subscription-modal
  * Description: Adds a confirmation modal when canceling EDD subscriptions.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Daan from Daan.dev
  * Text Domain: edd-cancel-subscription-modal
  * License: GPLv3 or later
